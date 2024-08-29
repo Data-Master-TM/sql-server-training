@@ -67,14 +67,72 @@ INSERT INTO Categories (CategoryName)
 VALUES 
 ('Electronics'),
 ('Books'),
-('Clothing');
+('Clothing'),
+('Home Appliances'),
+('Toys'),
+('Groceries'),
+('Furniture'),
+('Sports Equipment');
+
 
 INSERT INTO Products (ProductName, CategoryID, Price, StockQuantity)
 VALUES 
+-- Electronics
 ('Laptop', 1, 999.99, 50),
 ('Smartphone', 1, 699.99, 100),
+('Tablet', 1, 299.99, 75),
+('Headphones', 1, 149.99, 150),
+('Smartwatch', 1, 199.99, 60),
+
+-- Books
+('Novel', 2, 14.99, 150),
+('Science Fiction Book', 2, 19.99, 120),
+('History Book', 2, 24.99, 90),
+('Children\'s Book', 2, 9.99, 200),
+('Cookbook', 2, 29.99, 50),
+
+-- Clothing
 ('T-shirt', 3, 19.99, 200),
-('Novel', 2, 14.99, 150);
+('Jeans', 3, 49.99, 100),
+('Jacket', 3, 89.99, 75),
+('Sneakers', 3, 59.99, 150),
+('Dress', 3, 79.99, 60),
+
+-- Home Appliances
+('Refrigerator', 4, 799.99, 30),
+('Microwave', 4, 99.99, 100),
+('Washing Machine', 4, 499.99, 40),
+('Air Conditioner', 4, 299.99, 25),
+('Vacuum Cleaner', 4, 149.99, 60),
+
+-- Toys
+('Lego Set', 5, 59.99, 100),
+('Action Figure', 5, 24.99, 200),
+('Board Game', 5, 34.99, 150),
+('Puzzle', 5, 14.99, 250),
+('Doll', 5, 19.99, 180),
+
+-- Groceries
+('Rice', 6, 1.99, 1000),
+('Bread', 6, 2.99, 500),
+('Milk', 6, 1.49, 600),
+('Eggs', 6, 2.49, 400),
+('Cheese', 6, 4.99, 300),
+
+-- Furniture
+('Sofa', 7, 499.99, 20),
+('Dining Table', 7, 299.99, 15),
+('Bed', 7, 699.99, 10),
+('Chair', 7, 59.99, 40),
+('Desk', 7, 149.99, 30),
+
+-- Sports Equipment
+('Tennis Racket', 8, 79.99, 50),
+('Basketball', 8, 29.99, 100),
+('Soccer Ball', 8, 24.99, 120),
+('Running Shoes', 8, 99.99, 80),
+('Yoga Mat', 8, 19.99, 150);
+
 ```
 
 ### Step 4: Insert 1,000 Customers
