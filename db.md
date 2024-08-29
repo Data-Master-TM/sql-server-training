@@ -6,6 +6,15 @@ GO
 
 USE EcommerceDB;
 GO
+
+-- To Drop Database
+USE [master]
+GO
+
+/****** Object:  Database [EcommerceDB]    Script Date: 29-Aug-24 2:27:02 PM ******/
+DROP DATABASE [EcommerceDB]
+GO
+
 ```
 
 ### Step 2: Create Tables with Relationships
