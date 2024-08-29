@@ -16,7 +16,7 @@ CREATE TABLE Customers (
     FirstName varchar(50) NOT NULL,
     LastName varchar(50) NOT NULL,
     Email varchar(100) UNIQUE NOT NULL,
-    Phone varchar(15),
+    Phone varchar(50),
     Address varchar(255),
     City varchar(50),
     Country varchar(50)
