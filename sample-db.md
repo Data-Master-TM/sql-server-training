@@ -1176,7 +1176,7 @@ BEGIN
         -- Randomly assign an existing order
         CAST(RAND() * 999 + 1 AS int),
         -- Randomly assign an existing product
-        CAST(RAND() * 8 + 1 AS int),
+        CAST(RAND() * 39 + 1 AS int),
         -- Randomly assign quantity between 1 and 5
         CAST(RAND() * 4 + 1 AS int),
         -- Use product price for unit price
