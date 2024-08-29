@@ -1180,8 +1180,9 @@ BEGIN
         -- Randomly assign quantity between 1 and 5
         CAST(RAND() * 4 + 1 AS int),
         -- Use product price for unit price
-        (SELECT Price FROM Products WHERE ProductID = CAST(RAND() * 4 + 1 AS int))
+        (SELECT Price FROM Products WHERE ProductID = CAST(RAND() * 39 + 1 AS int))
     );
+
 
     SET @DetailCounter = @DetailCounter + 1;
 END
