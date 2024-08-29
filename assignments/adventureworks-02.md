@@ -4,6 +4,7 @@
 - Connect to the AdventureWorks database using SQL Server Management Studio (SSMS) or any other SQL environment.
 
 
+### **Questions:**
 
 <!-- ### 1. **LIKE Clause** -->
 1. Retrieve all products whose name starts with 'Mountain'.
