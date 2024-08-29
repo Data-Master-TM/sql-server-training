@@ -11,7 +11,6 @@ GO
 USE [master]
 GO
 
-/****** Object:  Database [EcommerceDB]    Script Date: 29-Aug-24 2:27:02 PM ******/
 DROP DATABASE [EcommerceDB]
 GO
 
