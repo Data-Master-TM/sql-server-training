@@ -1099,12 +1099,12 @@ We'll create orders and order details for each customer. To ensure diversity, we
 -- Insert Orders
 DECLARE @OrderCounter int = 1;
 
-WHILE @OrderCounter <= 1000
+WHILE @OrderCounter <= 10000
 BEGIN
     INSERT INTO Orders (CustomerID, TotalAmount)
     VALUES 
     (
-        @OrderCounter,
+        CAST(round(((10*round(rand(),1)+1)*100)/(round(rand()*5,1)+1),0) as int),
         -- Simulate a random total amount between 50 and 500
         CAST(RAND() * 450 + 50 AS decimal(10, 2))
     );
@@ -1115,7 +1115,7 @@ END
 -- Insert OrderDetails
 DECLARE @DetailCounter int = 1;
 
-WHILE @DetailCounter <= 1000
+WHILE @DetailCounter <= 10000
 BEGIN
     INSERT INTO OrderDetails (OrderID, ProductID, Quantity, UnitPrice)
     VALUES 
@@ -1139,8 +1139,8 @@ END
 - **1,000 Customers** with unique names, emails, and addresses.
 - **4 Categories** for Products.
 - **4 Products** assigned to the categories.
-- **1,000 Orders** placed by customers.
-- **1,000 Order Details** linked to orders and products.
+- **10,000 Orders** placed by customers.
+- **10,000 Order Details** linked to orders and products.
 
 ### Example Queries
 
