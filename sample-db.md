@@ -88,7 +88,7 @@ VALUES
 ('Novel', 2, 14.99, 150),
 ('Science Fiction Book', 2, 19.99, 120),
 ('History Book', 2, 24.99, 90),
-('Children\'s Book', 2, 9.99, 200),
+('Childrens Book', 2, 9.99, 200),
 ('Cookbook', 2, 29.99, 50),
 
 -- Clothing
