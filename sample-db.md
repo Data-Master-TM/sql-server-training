@@ -140,9 +140,6 @@ VALUES
 We will use a loop to insert 1,000 customers with varied names, emails, and other details.
 
 ```sql
-DECLARE @Counter int = 1;
-
-WHILE @Counter <= 1000
 
 INSERT INTO customers ([FirstName], [LastName], [Email], [Phone], [Address], [City], [Country]) VALUES ('John', 'Morgan', 'brandonsmith@gmail.com', '561.183.8425', '86829 Patricia Vista Apt. 589, Jessicashire, DC 15261', 'Newtonshire', 'Argentina');
 INSERT INTO customers ([FirstName], [LastName], [Email], [Phone], [Address], [City], [Country]) VALUES ('Brittney', 'Avila', 'darren69@white-harris.biz', '(401)876-8119x450', '1622 Elizabeth Tunnel, Lake Susan, CT 12833', 'New Mollyfurt', 'South Georgia and the South Sandwich Islands');
@@ -1145,8 +1142,6 @@ INSERT INTO customers ([FirstName], [LastName], [Email], [Phone], [Address], [Ci
 INSERT INTO customers ([FirstName], [LastName], [Email], [Phone], [Address], [City], [Country]) VALUES ('Monica', 'Walton', 'pallen@yahoo.com', '(865)639-9074x9803', '674 Robinson Vista, West Thomasstad, VT 44743', 'North Shannon', 'Jersey');
 INSERT INTO customers ([FirstName], [LastName], [Email], [Phone], [Address], [City], [Country]) VALUES ('Edward', 'Santiago', 'gmcdonald@yahoo.com', '199.740.4083x0049', '866 Butler Locks, Darrylstad, SC 55488', 'Port Cassie', 'Panama');
 
-    SET @Counter = @Counter + 1;
-END
 ```
 
 ### Step 5: Insert Sample Orders and OrderDetails
@@ -1181,7 +1176,7 @@ BEGIN
         -- Randomly assign an existing order
         CAST(RAND() * 999 + 1 AS int),
         -- Randomly assign an existing product
-        CAST(RAND() * 4 + 1 AS int),
+        CAST(RAND() * 8 + 1 AS int),
         -- Randomly assign quantity between 1 and 5
         CAST(RAND() * 4 + 1 AS int),
         -- Use product price for unit price
