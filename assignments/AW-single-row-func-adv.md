@@ -1,14 +1,18 @@
 ### **Assignment: Advanced SQL Queries Using Single Row Functions on Adventure Works**
 
-#### **Instructions:**
+
+##### **Instructions:**
 **Execute your queries on the Adventure Works database and analyze the results.**
 
 
----
+
+<br>  
+<br>  
+
 
 ### **Questions:**
 
----
+
 
 #### **1.**
 Retrieve the `ProductNumber` and `ListPrice` from the `Production.Product` table. Calculate the absolute difference between `ListPrice` and `StandardCost`, round the result to 2 decimal places, and concatenate the `ProductNumber` with the result as a string.
