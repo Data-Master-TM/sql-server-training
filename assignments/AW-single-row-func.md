@@ -24,7 +24,7 @@
 14. **Q14:** Use **`SUBSTRING()`** to extract the middle 3 characters of `LastName` starting from the 3rd character.
 15. **Q15:** Combine **`LEN()`** and **`LEFT()`** to display the first half of the `LastName`.
 
----
+
 
 <!--  ### **Numeric Functions** -->
 
@@ -39,7 +39,7 @@
 24. **Q24:** Use **`ROUND()`** to round the square root of `StandardCost` to 2 decimal places.
 25. **Q25:** Calculate the absolute value of `ProductSubcategoryID` subtracted from `ProductCategoryID` using the **`ABS()`** function.
 
----
+
 
 <!--  ### **Date Functions** -->
 
@@ -59,7 +59,7 @@
 39. **Q39:** Use **`GETDATE()`** and **`DATEADD()`** to find the date 100 days from today.
 40. **Q40:** Use **`ISDATE()`** to check if `ShipDate` is a valid date.
 
----
+
 
 <!--  ### **Data Type Conversion Functions** -->
 
