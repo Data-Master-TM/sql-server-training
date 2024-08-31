@@ -1,6 +1,7 @@
 ### **Assignment: Advanced SQL Queries Using Single Row Functions on Adventure Works**
 
 
+
 ##### **Instructions:**
 **Execute your queries on the Adventure Works database and analyze the results.**
 
